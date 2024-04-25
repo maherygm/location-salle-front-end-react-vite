@@ -1,0 +1,175 @@
+:root {
+  /* principal color */
+  --primaryColor: #9034ff;
+  --secondaryColor: #101621;
+  --thirdColor: #101621;
+
+  --primaryColor-alpha-09: rgba(143, 52, 255, 0.9);
+  --primaryColor-alpha-08: #8f34ffcc;
+  --primaryColor-alpha-07: #8f34ffb3;
+  --primaryColor-alpha-06: rgba(143, 52, 255, 0.6);
+  --primaryColor-alpha-05: rgba(143, 52, 255, 0.5);
+  --primaryColor-alpha-04: rgba(143, 52, 255, 0.4);
+  --primaryColor-alpha-03: #8f34ff4d;
+  --primaryColor-alpha-02: rgba(143, 52, 255, 0.2);
+  --primaryColor-alpha-01: rgba(143, 52, 255, 0.1);
+  --primaryColor-alpha-005: #8f34ff0d;
+  --primaryColor-alpha-002: rgba(143, 52, 255, 0.02);
+
+  --whiteColor: #ffffff;
+  --fillInput: #ffffff;
+  --greyColor: #e9ecf4;
+  --hoverColor: #f8f9fb;
+
+  --buttonHoverColor: rgb(29, 29, 29);
+
+  /* background */
+  --backgroundColor: #f4f4f4;
+
+  /* Transparent Color */
+  --whiteColorTransparent: rgba(255, 255, 255, 0.7);
+  --backColorTransparent: rgba(0, 0, 0, 0.05);
+  --darkColorTransparent: rgba(0, 0, 0, 0.08);
+  --scrollColor: rgba(0, 0, 0, 0.3);
+
+  /* Font color */
+  --darkFontColor: #494949;
+  --lightFontColor: #ffffff;
+
+  /* Success color */
+  --succesColor: #1b9a22;
+  --darksuccesColor: #26822b;
+
+  /* Warning color */
+  --warningColor: #fea23c;
+  --darkwarningColor: rgb(196, 111, 0);
+
+  /* Danger color */
+  --dangerColor: #df0b0b;
+  --darkdangerColor: #ff2600;
+
+  /* linear color */
+  --linearColor1: linear-gradient(to right, #00aeef 0%, #9e61c1 100%);
+  --linearColor2: linear-gradient(to right, #1a90e8 10%, #f7b50e 100%);
+  --transitionColor: linear-gradient(
+    180deg,
+    rgba(247, 247, 247, 0) 0%,
+    rgba(247, 247, 247, 1) 100%
+  );
+  /* Supplement color */
+  --color1: #ffb000;
+  --color2: #d30074;
+  --color3: #e96e16;
+  --color4: #06b91e;
+
+  /* For blur background */
+  --blurcolor1: #dcaffa;
+  --blurcolor2: #7bbff7;
+  --blurcolor3: #99e29a;
+
+  /* Font family */
+  --DefaultFont: Poppins;
+  --TitleFont: Nexa;
+
+  --fds-black: black;
+  --fds-white: #ffffff;
+  --fds: black;
+  --fds-alpha-05: rgba(255, 255, 255, 0.05);
+  --fds-alpha-10: rgba(255, 255, 255, 0.1);
+  --fds-alpha-20: rgba(255, 255, 255, 0.2);
+  --fds-alpha-30: rgba(255, 255, 255, 0.3);
+  --fds-alpha-40: rgba(255, 255, 255, 0.4);
+  --fds-alpha-50: rgba(255, 255, 255, 0.5);
+  --fds-alpha-60: rgba(255, 255, 255, 0.6);
+  --fds-alpha-80: rgba(255, 255, 255, 0.8);
+}
+
+.darktheme {
+  /* principal color */
+  --primaryColor: #9034ff;
+  --secondaryColor: #101621;
+  --thirdColor: #ffffff;
+
+  --primaryColor-alpha-09: rgba(143, 52, 255, 0.9);
+  --primaryColor-alpha-08: rgba(143, 52, 255, 0.8);
+  --primaryColor-alpha-07: #8f34ffb3;
+  --primaryColor-alpha-06: rgba(143, 52, 255, 0.6);
+  --primaryColor-alpha-05: rgba(143, 52, 255, 0.5);
+  --primaryColor-alpha-04: rgba(143, 52, 255, 0.4);
+  --primaryColor-alpha-03: #8f34ff4d;
+  --primaryColor-alpha-02: rgba(143, 52, 255, 0.2);
+  --primaryColor-alpha-01: rgba(143, 52, 255, 0.1);
+  --primaryColor-alpha-005: #8f34ff0d;
+  --primaryColor-alpha-002: rgba(143, 52, 255, 0.02);
+
+  --disabledColor: #7f7f7f;
+  --whiteColor: #030239;
+  --fillInput: #2e3c53;
+  --greyColor: #1c2638;
+  --hoverColor: rgba(255, 255, 255, 0.1);
+
+  --buttonHoverColor: #ffffff;
+
+  /* background */
+  --backgroundColor: #172133;
+
+  /* Transparent Color */
+  --whiteColorTransparent: rgba(255, 255, 255, 0.05);
+  --backColorTransparent: rgba(255, 255, 255, 0.05);
+  --darkColorTransparent: rgba(255, 255, 255, 0.06);
+  --scrollColor: rgba(255, 255, 255, 0.368);
+
+  /* Font color */
+  --darkFontColor: #ffffff;
+  --lightFontColor: #101010;
+
+  /* Success color */
+  --succesColor: #1b9a22;
+  --darksuccesColor: #26822b;
+
+  /* Warning color */
+  --warningColor: #fea23c;
+  --darkwarningColor: rgb(196, 111, 0);
+
+  /* Danger color */
+  --dangerColor: #df0b0b;
+  --darkdangerColor: #ff2600;
+
+  /* linear color */
+  --linearColor1: linear-gradient(to right, #6162c1 0%, #00aeef 100%);
+  --linearColor2: linear-gradient(to right, #1a90e8 10%, #f7b50e 100%);
+  --transitionColor: linear-gradient(
+    180deg,
+    rgba(9, 13, 20, 0) 0%,
+    rgba(9, 13, 20, 1) 100%
+  );
+
+  /* Supplement color */
+  --color1: #ffb000;
+  --color2: #d30074;
+  --color3: #e96e16;
+  --color4: #06b91e;
+
+  /* For blur background */
+  --blurcolor1: #cb8df5;
+  --blurcolor2: #63adeb;
+  --blurcolor3: #99e29a;
+
+  /* Font family */
+  // font-family: 'Epilogue', sans-serif;
+  --DefaultFont: Poppins;
+  --TitleFont: Nexa;
+
+  --fds-black: black;
+  --fds-white: #ffffff;
+  --fds: rgb(255, 255, 255);
+  --fds-alpha-05: rgba(0, 0, 0, 0.05);
+  --fds-alpha-10: rgba(0, 0, 0, 0.1);
+  --fds-alpha-15: rgba(0, 0, 0, 0.15);
+  --fds-alpha-20: rgba(0, 0, 0, 0.2);
+  --fds-alpha-30: rgba(0, 0, 0, 0.3);
+  --fds-alpha-40: rgba(0, 0, 0, 0.4);
+  --fds-alpha-50: rgba(0, 0, 0, 0.5);
+  --fds-alpha-60: rgba(0, 0, 0, 0.6);
+  --fds-alpha-80: rgba(0, 0, 0, 0.8);
+}
