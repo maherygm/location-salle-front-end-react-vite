@@ -18,7 +18,7 @@ const VIsite = () => {
     <div className="w-full h-screen overflow-hidden z-0 pt-36">
       <MapContainer
         center={position}
-        zoom={20}
+        zoom={13}
         scrollWheelZoom={false}
         style={{ minHeight: "80vh", minWidth: "100vw" }}
       >

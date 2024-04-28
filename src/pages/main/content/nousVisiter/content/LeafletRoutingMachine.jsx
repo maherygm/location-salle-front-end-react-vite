@@ -22,17 +22,15 @@ const LeafletRoutingMachine = () => {
       console.log("Geolocation is not supported by your browser");
     } else {
       navigator.geolocation.getCurrentPosition(success);
+      console.log("lat", lat, "lng", lng);
     }
     var marker1 = L.marker([lat, lng], {
       icon: DefaultIcon,
     }).addTo(map);
     map.on("click", function (e) {
-      L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
+      // L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
       L.Routing.control({
-        waypoints: [
-          L.latLng(-21.43772, 47.09989),
-          L.latLng(e.latlng.lat, e.latlng.lng),
-        ],
+        waypoints: [L.latLng(lat, lng), L.latLng(-21.43772, 47.09989)],
         lineOptions: {
           styles: [
             {
@@ -58,7 +56,7 @@ const LeafletRoutingMachine = () => {
         })
         .addTo(map);
     });
-  }, []);
+  }, [lat, lng]);
   return null;
 };
 

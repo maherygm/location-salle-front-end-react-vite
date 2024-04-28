@@ -1,24 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 import SwitchMode from "../../../../components/ui/switchMode/switchMode";
 import ButtonAnnimate from "../../../../components/ui/button/ButtonAnnimate";
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
+  const [active, setActiver] = useState(0);
   return (
     <div className="nav-bar-main-containner ">
       <div className="logo">
-        <h1>ITF</h1>
+        <h1>ROYAL ESPACE </h1>
       </div>
       <div className="main-navigation">
         <ul>
           <NavLink to={"/"}>
-            <li className="hover:text-green-600">Home </li>
+            <li
+              onClick={() => setActiver(1)}
+              className={`text-zinc-800   px-4 py-2 rounded-3xl  hover:bg-green-600/85 hover:text-white ${
+                active === 1 ? "bg-green-600/85" : ""
+              }`}
+            >
+              Home{" "}
+            </li>
           </NavLink>
           <NavLink to={"/visite"}>
-            <li className="hover:text-green-600">Nous Visiter </li>
+            <li
+              onClick={() => setActiver(2)}
+              className={`text-zinc-800   px-4 py-2 rounded-3xl  hover:bg-green-600/85 hover:text-white ${
+                active === 2 ? "bg-green-600/85" : ""
+              }`}
+            >
+              Nous Visiter{" "}
+            </li>
           </NavLink>
           <NavLink>
-            <li className="hover:text-green-600">A propos </li>
+            <li
+              onClick={() => setActiver(3)}
+              className={`text-zinc-800   px-4 py-2 rounded-3xl  hover:bg-green-600/85 hover:text-white ${
+                active === 3 ? "bg-green-600/85" : ""
+              }`}
+            >
+              A propos{" "}
+            </li>
           </NavLink>
         </ul>
       </div>

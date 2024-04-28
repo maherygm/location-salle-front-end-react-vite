@@ -49,17 +49,17 @@ const config = {
   lang: "fr",
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#9b71f5",
+      backgroundColor: "#4fa94d",
     },
     chatButton: {
-      backgroundColor: "#9b71f5",
+      backgroundColor: "#4fa94d",
     },
   },
   customComponents: {
     header: () => (
       <div
         style={{
-          backgroundColor: "#9b71f5",
+          backgroundColor: "#4fa94d",
           padding: "15px",
           borderRadius: "3px",
           color: "white",
