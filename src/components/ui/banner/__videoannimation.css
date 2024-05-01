@@ -1,6 +1,9 @@
 .main-container-video {
   display: flex;
 }
+.text-bann{
+  color:var(--darkFontColor)
+}
 
 .video {
   visibility: hidden;

@@ -1,0 +1,202 @@
+.contact {
+  width: 100%;
+  height: auto;
+  background: url('../../../../../../assets/image/background/900x450/img12.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--thirdColor);
+  margin: 0px auto;
+  background-attachment: fixed;
+}
+
+.container-contact {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+
+  margin: 0px auto;
+  z-index: 2;
+}
+.round-contact {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 100%;
+  border: 2px solid var(--primaryColor);
+  transition: transform 100ms;
+  z-index: 0;
+}
+
+.header-contact {
+  margin: 20px auto;
+  text-align: center;
+  width: 40%;
+  color: #fff;
+  padding-top: 40px;
+}
+
+.main-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.header-contact h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.info-conact-us,
+.message-contact {
+  margin: 20px 20px;
+}
+.info {
+  display: flex;
+
+  align-items: center;
+}
+
+.icon-contact {
+  width: fit-content;
+  margin: 20px;
+}
+.icon-contact .icons {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 100%;
+  padding: 10px;
+  z-index: 4;
+}
+.icon-contact:hover .icons {
+  scale: 1.2;
+}
+.info-content h4 {
+  color: var(--primaryColor);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.info-content p {
+  color: #fff;
+}
+
+.message-contact {
+  padding: 20px 30px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  z-index: 2;
+  background-color: var(--whiteColorTransparent);
+  border-radius: 15px;
+}
+
+.text-field-contenaire {
+  background-color: var(--fillInput);
+  margin: 10px 0px;
+  border-radius: 15px;
+  height: auto;
+}
+.text-area-contenaire {
+  background-color: var(--fillInput);
+  margin: 10px 0px;
+  width: 100%;
+  border-radius: 15px;
+}
+.text-field:not(.text-area-message) {
+  width: 100%;
+  color: inherit;
+  background: inherit;
+  border: inherit;
+  height: 45px;
+  border-radius: 15px;
+  padding: 2px 20px;
+}
+.text-area-message {
+  resize: none;
+  width: 100%;
+  color: inherit;
+  background: inherit;
+  border: inherit;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.btn-contact button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-contact {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.btn-contact button {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: #fff;
+  background-color: #9b71f5;
+  border-radius: 15px;
+  height: 45px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn-contact button:hover{
+  
+}
+
+.btn-contact button p {
+  margin-left: 10px;
+}
+.btn-contact .icons {
+  width: 32px;
+  height: 32px;
+  stroke: #fff;
+}
+
+@media (max-width: 1200px) {
+  .message-contact {
+    margin-left: 100px;
+    padding: 50px 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .message-contact {
+    margin-left: 100px;
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-contact {
+    margin: 0 auto;
+    padding: 0px 20px 10px;
+  }
+  .main-contact {
+    flex-direction: column-reverse;
+  }
+  .message-contact {
+    margin: 0 auto;
+    padding: 50px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .message-contact {
+    width: 100%;
+  }
+
+  .header-contact{
+    width: 80%;
+  }
+}

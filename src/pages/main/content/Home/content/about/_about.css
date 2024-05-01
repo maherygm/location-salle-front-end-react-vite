@@ -1,0 +1,117 @@
+.supernova-container.about {
+    background-image: url('../../../../../../assets/image/background/components/shape-5.svg');
+    background-size: cover;
+}
+
+.supernova-container.about .supernova-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: var(--darkFontColor);
+}
+
+.supernova-container.about .supernova-content .leftside, .supernova-container.about .supernova-content .rigthside{
+    width: 50%;
+}
+
+.supernova-container.about .supernova-content .rigthside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.supernova-container.about .supernova-content .rigthside img{
+    width: 80%;
+    text-align: center;
+}
+
+.supernova-container.about .supernova-content h1{
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.supernova-container.about .supernova-content small{
+    background-color: var(--primaryColor);
+    padding: 2px 12px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.supernova-container.about .supernova-content .leftside p{
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.supernova-container.about .supernova-content .leftside .distinct-info{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.supernova-container.about .supernova-content .leftside .distinct-info .distinct-info-items{
+    display: flex;
+    width: 240px;
+    margin-top: 22px;
+    align-items: center;
+    font-size: 13px;
+}
+.supernova-container.about .supernova-content .leftside .distinct-info .distinct-info-items span{
+    margin-left: 20px;
+    font-family: "Poppins";
+}
+
+.supernova-container.about .supernova-content .leftside button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--darkFontColor);
+    border: 1px solid var(--darkFontColor);
+    background-color: transparent;
+    box-shadow: -4px 6px 0px var(--darkFontColor);
+    transition: 0.4s ease;
+}
+
+.supernova-container.about .supernova-content .leftside button:hover{
+    padding: 10px 30px; 
+    box-shadow: 0px 0px 0px var(--darkFontColor);
+}
+
+@media (max-width: 768px) {
+    .supernova-container.about .supernova-content{
+        margin: 100px auto;
+    }
+
+    .supernova-container.about .supernova-content .leftside{
+        width: 100%;
+    }
+
+    .supernova-container.about .supernova-content .rigthside{
+        display: none;
+        width: 0px;
+    }
+
+    .supernova-container.about .supernova-content .leftside h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .supernova-container.about .supernova-content .leftside p{
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .supernova-container.about .supernova-content .rightside{
+        display: none;
+    }
+
+    .supernova-container.about .supernova-content .leftside button{
+        width: 100%;
+    }
+
+    .supernova-container.about .supernova-content .leftside .distinct-info .distinct-info-items{
+        width: 150px;
+    }
+}

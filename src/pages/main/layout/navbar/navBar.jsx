@@ -3,10 +3,12 @@ import "./navbar.scss";
 import SwitchMode from "../../../../components/ui/switchMode/switchMode";
 import ButtonAnnimate from "../../../../components/ui/button/ButtonAnnimate";
 import { NavLink } from "react-router-dom";
+import LangSelection from "../../../../components/langaugesSelection/langSelection";
+import { t } from "../../../../utils/helpers/translation/i18nHelper";
 const NavBar = () => {
   const [active, setActiver] = useState(0);
   return (
-    <div className="nav-bar-main-containner ">
+    <div className="nav-bar-main-containner">
       <div className="logo">
         <h1>ROYAL ESPACE </h1>
       </div>
@@ -19,7 +21,7 @@ const NavBar = () => {
                 active === 1 ? "bg-green-600/85" : ""
               }`}
             >
-              Home{" "}
+              {t("navbar.home")}
             </li>
           </NavLink>
           <NavLink to={"/visite"}>
@@ -29,7 +31,7 @@ const NavBar = () => {
                 active === 2 ? "bg-green-600/85" : ""
               }`}
             >
-              Nous Visiter{" "}
+              {t("navbar.visite")}
             </li>
           </NavLink>
           <NavLink>
@@ -39,7 +41,7 @@ const NavBar = () => {
                 active === 3 ? "bg-green-600/85" : ""
               }`}
             >
-              A propos{" "}
+              {t("navbar.about")}
             </li>
           </NavLink>
         </ul>
@@ -47,9 +49,10 @@ const NavBar = () => {
       <div className="action-containner">
         <SwitchMode />
         <NavLink to={"/sign/signin"}>
-          <ButtonAnnimate title={"sign In"} />
+          <ButtonAnnimate title={t("navbar.signIn")} />
         </NavLink>
       </div>
+      <LangSelection />
     </div>
   );
 };

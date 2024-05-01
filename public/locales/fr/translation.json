@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "A propos",
+    "solution": "Solutions",
+    "school": "Ecole",
+    "contact": "Contact",
+    "signIn": "Se connecter",
+    "signUp": "Inscription",
+    "mode": "Mode sombre",
+    "visite":"Nous Visiter"
+  },
+
+  "banner": {
+    "lTitle": "Votre événement, notre espace",
+    "bTitle1": "créez des souvenirs inoubliables",
+    "bTitle2": "Dans notre Salle de Location",
+    "bTitle3": "Decouvrir ce qu Nous Faisons",
+    "bTitle4": "chemin",
+    "sTitle": "Découvrez l'avenir de l'éducation avec SIRIUS, où le savoir rencontre l'innovation. Développer vos compétences, tout en repoussant les limites de votre potentiel."
+  },
+
+  "about": {
+    "lTitle": "A propos",
+    "Title": "Votre partenaire dans votre montée intellectuelle.",
+    "paragraphe1": "À votre arrivée, vous serez accueillis par l'élégance intemporelle de notre espace, baigné de lumière naturelle qui se faufile à travers de grandes baies vitrées. L'harmonie des couleurs apaisantes et des détails raffinés crée une atmosphère chaleureuse et conviviale.",
+    "info1": "Location Pour Mariage",
+    "info2": "Location Pour Semminaire ",
+    "info3": "Location Pour Soirée",
+    "info4": "Autres",
+    "btn": "Regarder la présentation"
+  },
+
+  "cta1": {
+    "Title": "Découvrez un monde d'apprentissage illimité.",
+    "paragraphe": "SIRIUS, là où les rêves se transforment en compétences. Rejoignez-nous pour explorer, apprendre et grandir!",
+    "btn": "Inscrivez-vous dès maintenant"
+  }
+}

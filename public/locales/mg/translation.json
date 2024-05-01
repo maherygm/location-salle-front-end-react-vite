@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "home": "Fandraisana",
+    "about": "Momba",
+    "solution": "Solosaina",
+    "school": "Efitrano",
+    "contact": "Mifandraisana",
+    "signIn": "Midira",
+    "signUp": "Manaraka",
+    "mode": "Tsiverina fotsy",
+    "visite": "Hitsidika Anay"
+  },
+  "banner": {
+    "lTitle": "Ny Raharahanao , Ny Tranonay ",
+    "bTitle1": "Miteraka Fahatsiarovana tsara ho Anao",
+    "bTitle2": "Ato amin'ny Toerana Mahafinaritra",
+    "bTitle3": "Hahafantatra Misimisy Kokoa",
+    "bTitle4": "Lalana",
+    "sTitle": "Mahita ny zavatra atao amin'ny lalana misy ny famantarana momba ny fampianarana amin'ny SIRIUS, aiza ny fahazoana rehetra amin'ny havoriana rehetra. Mampiditra ny fahafahanao, raha te-handefa ny tatitrao."
+  },
+  "about": {
+    "lTitle": "Momba",
+    "Title": "Ny mpitarikao amin'ny fahombiazanao intelektoala.",
+    "paragraphe1": "Raha tonga ao an-trano, hampifanarinao ny efitra faneva be mivantana izay misy ny fampitandremana loatra momba ny fahalalana manodidina ny toerana voasoratra manodidina ny dingana mavitrika. Ny fifandraisana ara-pahasalamana sy ny singanana manan-talenta dia misy fitetezana mitombo ho anao.",
+    "info1": "Fividianana Efitrano ho an'ny Fahasalamana",
+    "info2": "Fividianana Efitrano ho an'ny Seminara",
+    "info3": "Fividianana Efitrano ho an'ny Asabotsy",
+    "info4": "Hafa",
+    "btn": "Jereo ny fampiharana"
+  },
+  "cta1": {
+    "Title": "Mahita ny faritra iray tsy maintsy fahalalana.",
+    "paragraphe": "SIRIUS, aiza ny fifaninananao miady amin'ny fampiasa mankany ho an'ny fahombiazana. Amitompo aminay mba hanomboka, hanaraka ary hampiova!",
+    "btn": "Manaraka amin'izao"
+  }
+}

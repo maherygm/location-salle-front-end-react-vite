@@ -1,0 +1,79 @@
+.supernova-container.callToAction {
+  margin: 100px auto;
+  background-color: var(--greyColor);
+  background-image: url("../../../../../../assets/image/background/student_back.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+
+  width: 90%;
+}
+
+.supernova-container.callToAction .cta1 {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  justify-content: space-around;
+}
+
+.supernova-container.callToAction .leftside,
+.supernova-container.callToAction .rigthside {
+  width: 50%;
+}
+
+.supernova-container.callToAction .cta1-btn {
+  background-color: var(--primaryColor);
+  border-radius: 100px;
+  font-size: 13px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+}
+
+.supernova-container.callToAction .leftside {
+  display: flex;
+  align-items: center;
+  color: var(--darkFontColor);
+  flex-direction: column;
+}
+
+.supernova-container.callToAction .cta1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+  flex-direction: column;
+}
+
+.supernova-container.callToAction .cta1-btn:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.supernova-container.callToAction .cta1 h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.supernova-container.callToAction .cta1 .cta1-content {
+  width: 80%;
+}
+
+.supernova-container.callToAction .cta1 p {
+  text-align: left;
+  font-size: 14px;
+  /* opacity: 0.8; */
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.supernova-container.callToAction .rigthside {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .supernova-container.callToAction {
+    margin: 70px 0px;
+  }
+}

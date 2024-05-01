@@ -1,0 +1,36 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "solution": "Solutions",
+    "school": "School",
+    "contact": "Contact",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "mode": "Dark Mode",
+    "visite": "Visit Us"
+  },
+  "banner": {
+    "lTitle": "Your Event, Our Space",
+    "bTitle1": "Create Unforgettable Memories",
+    "bTitle2": "In Our Event Space",
+    "bTitle3": "Discover What We Do",
+    "bTitle4": "Path",
+    "sTitle": "Explore the future of education with SIRIUS, where knowledge meets innovation. Develop your skills while pushing the boundaries of your potential."
+  },
+  "about": {
+    "lTitle": "About",
+    "Title": "Your Partner in Intellectual Ascension.",
+    "paragraphe1": "Upon arrival, you will be greeted by the timeless elegance of our space, bathed in natural light that filters through large windows. The harmony of soothing colors and refined details creates a warm and friendly atmosphere.",
+    "info1": "Venue for Weddings",
+    "info2": "Venue for Seminars",
+    "info3": "Venue for Events",
+    "info4": "Others",
+    "btn": "Watch the Presentation"
+  },
+  "cta1": {
+    "Title": "Discover a World of Limitless Learning.",
+    "paragraphe": "SIRIUS, where dreams turn into skills. Join us to explore, learn, and grow!",
+    "btn": "Sign Up Now"
+  }
+}

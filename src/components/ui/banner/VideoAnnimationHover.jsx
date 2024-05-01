@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./__videoannimation.css";
 import videoM from "../../../assets/video/vid.mp4";
+import { t } from "../../../utils/helpers/translation/i18nHelper";
+import ButtonAnnimate from "../button/ButtonAnnimate";
 const VideoAnnimationHover = () => {
   const videoRef = useRef(null);
 
@@ -56,14 +58,13 @@ const VideoAnnimationHover = () => {
       </video>
       <div className="absolute top-28">
         <h1 className="text-9xl z-10 mix-blend-difference text-white">
-          Votre événement, notre espace
+          {t("banner.lTitle")}
         </h1>
-        <h1 className="text-7xl z-10 px-7">créez des souvenirs inoubliables</h1>
+        <h1 className="text-7xl z-10 px-7 text-bann">{t("banner.bTitle1")}</h1>
       </div>
       <div className="absolute bottom-28 right-10">
-        <h1 className="text-7xl text-right w-full">
-          Dans notre Salle de Location
-        </h1>
+        <ButtonAnnimate title={t("banner.bTitle3")} />
+        <h1 className="text-7xl text-right w-full text-bann">{t("banner.bTitle2")}</h1>
       </div>
     </div>
   );
