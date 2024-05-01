@@ -3,18 +3,18 @@ import "./__option.css";
 const Options = (props) => {
   const options = [
     {
-      text: "Information sur les transport",
-      handler: props.actionProvider.handleTransport,
+      text: "Information sur Nous",
+      handler: props.actionProvider.handleAbouts,
       id: 1,
     },
     {
-      text: "trouver des lieux",
-      handler: props.actionProvider.handleLieux,
+      text: "trouver le bon lieux",
+      handler: props.actionProvider.handleLocation,
       id: 2,
     },
     {
-      text: "trouver des articles",
-      handler: props.actionProvider.handleArticles,
+      text: "Notre Service",
+      handler: props.actionProvider.handleService,
       id: 3,
     },
   ];

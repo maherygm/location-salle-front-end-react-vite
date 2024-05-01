@@ -24,8 +24,25 @@ const __SIGN__ = lazy(() => import("../../pages/auth/index"));
 const __SIGN__IN__ = lazy(() => import("../../pages/auth/signIn/SignIn"));
 const __SIGN__UP__ = lazy(() => import("../../pages/auth/signUp/SignUp"));
 
+//loyer
+const __LOYERS__ = lazy(() => import("../../pages/loyer/Loyer"));
+const __LOYERS__AUTRES__ = lazy(() =>
+  import("../../pages/loyer/content/Autres/Autres")
+);
+const __LOYERS__MARRIAGES__ = lazy(() =>
+  import("../../pages/loyer/content/Marriages/Marriage")
+);
+const __LOYERS__SEMINAIRES__ = lazy(() =>
+  import("../../pages/loyer/content/Seminaire/Seminaire")
+);
+const __LOYERS__SOIREE__ = lazy(() =>
+  import("../../pages/loyer/content/Soirée/Soire")
+);
+
+const __PAYEMENTS__ = lazy(() => import("../../pages/payement/Payement"));
+
 const RouteConfig = () => {
-  // checkmode();
+  checkmode();
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
@@ -40,6 +57,17 @@ const RouteConfig = () => {
         <Route path="/dashboard" element={<__dashboard__ />}>
           <Route index element={<__dashboard_Home__ />} />
         </Route>
+
+        {/* Loyers */}
+        <Route path="/loyer" element={<__LOYERS__ />}>
+          <Route path="marriage" element={<__LOYERS__MARRIAGES__ />} />
+          <Route path="seminaire" element={<__LOYERS__SEMINAIRES__ />} />
+          <Route path="soiree" element={<__LOYERS__SOIREE__ />} />
+          <Route path="autres" element={<__LOYERS__AUTRES__ />} />
+        </Route>
+
+        {/* Payements */}
+        <Route path="/payement/{id}" element={<__PAYEMENTS__ />} />
 
         {/* athentification routes */}
         <Route path="/sign" element={<__SIGN__ />}>

@@ -20,6 +20,51 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, botMessage],
     }));
   };
+
+  const handleAbouts = () => {
+    const botMessage = createChatBotMessage(
+      "Nous somme une salle de location située Bateravola FIanarantsoa , nous acceuillont n'importe quelle evenement quelque soit mariage , seminaire , soirée , et bien autre types d'evenement ",
+      {
+        widget: "options",
+      }
+    );
+    Speak(
+      "Nous somme une salle de location située Bateravola FIanarantsoa , nous acceuillont n'importe quelle evenement quelque soit mariage , seminaire , soirée , et bien autre types d'evenement"
+    );
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+  const handleLocation = () => {
+    const botMessage = createChatBotMessage(
+      "Trouver un bon lieux pour VOtre evenement , nous pouvons acueilllier plus de 1000 personnes  avec nottre salle spacieux et elegant",
+      {
+        widget: "options",
+      }
+    );
+    Speak(
+      "Trouver un bon lieux pour VOtre evenement , nous pouvons acueilllier plus de 1000 personnes  avec nottre salle spacieux et elegant"
+    );
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+  const handleService = () => {
+    const botMessage = createChatBotMessage(
+      "Nous Acueillons , marriages , seminaire , soireé , et bien d'autre",
+      {
+        widget: "options",
+      }
+    );
+    Speak("Nous Acueillons , marriages , seminaire , soireé , et bien d'autre");
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+
   const handleTransport = () => {
     const botMessage = createChatBotMessage(
       "Identifier les trajets des bus ainsi que leurs points d'arrêt, et faciliter la localisation des taxis constituent des aspects clés pour améliorer la mobilité urbaine.",
@@ -213,6 +258,9 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             handleIconnu,
             handleComment_allerVous,
             handleAurevoir,
+            handleAbouts,
+            handleLocation,
+            handleService,
           },
         });
       })}
