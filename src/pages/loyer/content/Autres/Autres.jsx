@@ -16,7 +16,6 @@ const Autres = () => {
           background: `url(${autre})`,
         }}
       ></div>
-
       <div className="px-40 z-50 w-full justify-start">
         <div className="py-8">
           <h1 className="text-7xl">salles pour tous types d'événements</h1>

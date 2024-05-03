@@ -41,6 +41,14 @@ const __LOYERS__SOIREE__ = lazy(() =>
 
 const __PAYEMENTS__ = lazy(() => import("../../pages/payement/Payement"));
 
+const __REDIRECT__ = lazy(() => import("../../pages/redirect/Redirect"));
+const __REDIRECT_SUCCES__ = lazy(() =>
+  import("../../pages/redirect/succes/Succes")
+);
+const __REDIRECT_FAIL__ = lazy(() =>
+  import("../../pages/redirect/cancel/Cancel")
+);
+
 const RouteConfig = () => {
   checkmode();
   return (
@@ -73,6 +81,13 @@ const RouteConfig = () => {
         <Route path="/sign" element={<__SIGN__ />}>
           <Route path="signIn" element={<__SIGN__IN__ />} />
           <Route path="signUp" element={<__SIGN__UP__ />} />
+        </Route>
+
+        {/* {redirection } */}
+
+        <Route path="/redirect" element={<__REDIRECT__ />}>
+          <Route path="succes" element={<__REDIRECT_SUCCES__ />} />
+          <Route path="cancel" element={<__REDIRECT_FAIL__ />} />
         </Route>
       </Routes>
     </Suspense>
