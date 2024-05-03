@@ -60,14 +60,14 @@ const RouteConfig = () => {
 
         {/* Loyers */}
         <Route path="/loyer" element={<__LOYERS__ />}>
-          <Route path="marriage" element={<__LOYERS__MARRIAGES__ />} />
+          <Route index element={<__LOYERS__MARRIAGES__ />} />
           <Route path="seminaire" element={<__LOYERS__SEMINAIRES__ />} />
           <Route path="soiree" element={<__LOYERS__SOIREE__ />} />
           <Route path="autres" element={<__LOYERS__AUTRES__ />} />
         </Route>
 
         {/* Payements */}
-        <Route path="/payement/{id}" element={<__PAYEMENTS__ />} />
+        <Route path="/payement" element={<__PAYEMENTS__ />} />
 
         {/* athentification routes */}
         <Route path="/sign" element={<__SIGN__ />}>

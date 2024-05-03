@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import "./assets/styles/mixStyle";
+
+* {
+  font-family: var(--DefaultFont);
+}
 h1 {
   font-family: var(--TitleFont);
 }
-h2{
+h2 {
   top: 0;
 }

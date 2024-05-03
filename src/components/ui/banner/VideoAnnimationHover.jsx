@@ -3,6 +3,7 @@ import "./__videoannimation.css";
 import videoM from "../../../assets/video/vid.mp4";
 import { t } from "../../../utils/helpers/translation/i18nHelper";
 import ButtonAnnimate from "../button/ButtonAnnimate";
+import { useNavigate } from "react-router-dom";
 const VideoAnnimationHover = () => {
   const videoRef = useRef(null);
 
@@ -43,6 +44,12 @@ const VideoAnnimationHover = () => {
     annimation();
   }, []);
 
+  const navigate = useNavigate();
+
+  function navigateTo(parameters) {
+    navigate(parameters);
+  }
+
   return (
     <div className="main-container-video relative">
       <canvas ref={canvasRef} className="canvas-viedo z-0" />
@@ -63,8 +70,13 @@ const VideoAnnimationHover = () => {
         <h1 className="text-7xl z-10 px-7 text-bann">{t("banner.bTitle1")}</h1>
       </div>
       <div className="absolute bottom-28 right-10">
-        <ButtonAnnimate title={t("banner.bTitle3")} />
-        <h1 className="text-7xl text-right w-full text-bann">{t("banner.bTitle2")}</h1>
+        <ButtonAnnimate
+          onClick={() => navigateTo("/loyer")}
+          title={t("banner.bTitle3")}
+        />
+        <h1 className="text-7xl text-right w-full text-bann">
+          {t("banner.bTitle2")}
+        </h1>
       </div>
     </div>
   );

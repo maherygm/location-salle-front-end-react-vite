@@ -1,7 +1,8 @@
 import React from "react";
+import PayementMethode from "./content/PayementMethode";
 
 const Payement = () => {
-  return <div>Payement</div>;
+  return <PayementMethode />;
 };
 
 export default Payement;
