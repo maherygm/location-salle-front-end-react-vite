@@ -8,7 +8,7 @@
     "signIn": "Se connecter",
     "signUp": "Inscription",
     "mode": "Mode sombre",
-    "visite":"Nous Visiter"
+    "visite": "Nous Visiter"
   },
 
   "banner": {
@@ -22,7 +22,7 @@
 
   "about": {
     "lTitle": "A propos",
-    "Title": "Votre partenaire dans votre montée intellectuelle.",
+    "Title": "Votre partenaire Dans votre evenements",
     "paragraphe1": "À votre arrivée, vous serez accueillis par l'élégance intemporelle de notre espace, baigné de lumière naturelle qui se faufile à travers de grandes baies vitrées. L'harmonie des couleurs apaisantes et des détails raffinés crée une atmosphère chaleureuse et conviviale.",
     "info1": "Location Pour Mariage",
     "info2": "Location Pour Semminaire ",
@@ -32,8 +32,8 @@
   },
 
   "cta1": {
-    "Title": "Découvrez un monde d'apprentissage illimité.",
-    "paragraphe": "SIRIUS, là où les rêves se transforment en compétences. Rejoignez-nous pour explorer, apprendre et grandir!",
+    "Title": "Nos Evenement A venir .",
+    "paragraphe": "ROYAL  ESPACE , là où les rêves se transforment . Rejoignez-nous pour explorer, etre engloutis dans un evenment inoubliable",
     "btn": "Inscrivez-vous dès maintenant"
   }
 }

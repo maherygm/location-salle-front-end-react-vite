@@ -33,7 +33,7 @@ function About() {
               data-aos-delay="300"
             >
               <img src={bibliotecIcon} alt="about Icon" width={"35x"} />
-              <span>{t("about.info1")}</span>
+              <span className="text-2xl">{t("about.info1")}</span>
             </div>
             <div
               className="distinct-info-items"
@@ -41,7 +41,7 @@ function About() {
               data-aos-delay="400"
             >
               <img src={classIcon} alt="about Icon" width={"35x"} />
-              <span>{t("about.info2")}</span>
+              <span className="text-2xl">{t("about.info2")}</span>
             </div>
             <div
               className="distinct-info-items"
@@ -49,7 +49,7 @@ function About() {
               data-aos-delay="500"
             >
               <img src={schoolIcon} alt="about Icon" width={"35x"} />
-              <span>{t("about.info3")}</span>
+              <span className="text-2xl">{t("about.info3")}</span>
             </div>
             <div
               className="distinct-info-items"
@@ -57,7 +57,7 @@ function About() {
               data-aos-delay="600"
             >
               <img src={certificateIcon} alt="about Icon" width={"35x"} />
-              <span>{t("about.info4")}</span>
+              <span className="text-2xl">{t("about.info4")}</span>
             </div>
           </div>
           <button data-aos="zoom-in-right">{t("about.btn")}</button>

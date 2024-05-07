@@ -4,29 +4,15 @@ import Lottie from "lottie-react";
 import "./__signIn.scss";
 import groovyWalkAnimation from "../../../assets/lotties/walk.json";
 import { ArrowBack, Lock, Person } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import { IconButton, TextField } from "@mui/material";
 
 import ButtonAnnimate from "../../../components/ui/button/ButtonAnnimate";
 import { NavLink, useNavigate } from "react-router-dom";
 
 import { ToastContainer, toast } from "react-toastify";
+import { login } from "../../../services/clientService";
 
 const SignIn = () => {
-  const lotieRef = useRef();
-
-  // useEffect(() => {
-  //   lotieRef.current.pause();
-  // });
-
-  const navigate = useNavigate();
-
-  function navigateTo(params) {
-    navigate("/dashboard/home");
-  }
-
-  const [emails, setEmails] = useState("");
-  const [mdp, setMdp] = useState("");
-
   const notifySuccess = () =>
     toast.success("Connection Reussis", {
       position: "top-left",
@@ -48,6 +34,28 @@ const SignIn = () => {
       progress: undefined,
       theme: "colored",
     });
+
+  const navigate = useNavigate();
+  function Nav(parameters) {
+    navigate("/");
+  }
+
+  function log(parameters) {
+    let islog = login(mail, mdp);
+    islog.then((value) => {
+      if (value.login) {
+        localStorage.setItem("user", JSON.stringify(value.user));
+        notifySuccess("Vous etes connecter 😁");
+        setTimeout(() => {
+          Nav();
+        }, 3000);
+      } else {
+        notifyErr("Erreur de onnection 😥");
+      }
+    });
+  }
+  const [mail, setMail] = useState("");
+  const [mdp, setMdp] = useState("");
   return (
     <div className="sign-in-main-container">
       <div className="back-btn">
@@ -58,94 +66,28 @@ const SignIn = () => {
           <p>Revenir en Arriere</p>
         </NavLink>
       </div>
-      <div className="section-sign-in-pages">
-        <div className="section section-1">
-          <form>
-            <p>Visual |space</p>
-            <h2>
-              Over 30 Million <br /> Shaping the perfect space
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              tempora impedit laboriosam accusantium vel sint ipsum dignissimos
-              sed suscipit magni?
-            </p>
-
-            <div className="field ">
-              <p className="control has-icons-left has-icons-right">
-                <input
-                  className="input is-medium"
-                  type="texte"
-                  placeholder="Entrez Votre Emails"
-                  onBlur={() => lotieRef.current.pause()}
-                  onChange={(e) => {
-                    lotieRef.current.play();
-                    setEmails(e.target.value);
-                  }}
-                  onKeyUp={() =>
-                    setTimeout(() => {
-                      lotieRef.current.pause();
-                    }, 2000)
-                  }
-                  value={emails}
-                />
-                <span className="icon is-small is-left">
-                  <Person />
-                </span>
-                <span className="icon is-small is-right">
-                  <i className="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-            <div className="field">
-              <p className="control has-icons-left has-icons-right">
-                <input
-                  className="input  is-medium"
-                  type="password"
-                  placeholder="mots de passe"
-                  onBlur={() => lotieRef.current.pause()}
-                  onChange={(e) => {
-                    lotieRef.current.play();
-                    setMdp(e.target.value);
-                  }}
-                  onKeyUp={() =>
-                    setTimeout(() => {
-                      lotieRef.current.pause();
-                    }, 5000)
-                  }
-                  value={mdp}
-                />
-                <span className="icon is-small is-left">
-                  <Lock />
-                </span>
-                <span className="icon is-small is-right">
-                  <i className="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-            <div
-              className="btn-container"
-              onMouseEnter={() => lotieRef.current.play()}
-              onMouseLeave={() => lotieRef.current.pause()}
-            >
-              <ButtonAnnimate title={"Connection"} />
-            </div>
-            <div className="fotter-sign">
-              <p> No account Yet ? </p>
-              <NavLink to={"/sign/signup"}>
-                <p> Registered</p>
-              </NavLink>
-            </div>
-          </form>
-        </div>
-        <div className="section section-2">
-          <div className="lottie-container">
-            <Lottie
-              lottieRef={lotieRef}
-              animationData={groovyWalkAnimation}
-              autoPlay={false}
+      <div className="flex justify-center items-center flex-col w-full h-full ">
+        <h2>ROYAL ESPACE</h2>
+        <div className="flex justify-center items-center flex-col gap-7 max-w-screen-sm w-1/2 py-16 h-auto shadow-md px-28 rounded-xl">
+          <h1 className="text-3xl">Connection</h1>
+          <div className="w-full flex flex-col gap-4  ">
+            <TextField
+              placeholder="Email"
+              value={mail}
+              fullWidth
+              variant="filled"
+              onChange={(e) => setMail(e.target.value)}
+            />
+            <TextField
+              placeholder="Mots de passes"
+              type="password"
+              fullWidth
+              variant="filled"
+              onChange={(e) => setMdp(e.target.value)}
+              value={mdp}
             />
           </div>
+          <ButtonAnnimate title={"se connecter"} onClick={() => log()} />
         </div>
       </div>
     </div>

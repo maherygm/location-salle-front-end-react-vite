@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -12,6 +12,12 @@ import cardimage3 from "../../../assets/branding/img/480x320/img29.jpg";
 import cardimage4 from "../../../assets/branding/img/480x320/img30.jpg";
 import cardimage5 from "../../../assets/branding/img/480x320/img31.jpg";
 import cardimage6 from "../../../assets/branding/img/480x320/img32.jpg";
+import { getEvent } from "../../../services/clientService";
+
+import marriage from "../../../assets/illustr/marriage.jpg";
+import seminaire from "../../../assets/illustr/seminaire.jpg";
+import autre from "../../../assets/illustr/autre.jpg";
+import soiree from "../../../assets/illustr/soirée.jpg";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -79,6 +85,15 @@ const SliderCard = () => {
     },
     // Ajoutez d'autres données de carte selon vos besoins
   ];
+
+  let [data, setdata] = useState([]);
+  useEffect(() => {
+    let dataF = getEvent();
+
+    dataF.then((value) => {
+      setdata(value.data);
+    });
+  }, [data]);
 
   var settings = {
     dots: true,
@@ -149,6 +164,28 @@ const SliderCard = () => {
     setMousePressed(false);
   };
 
+  function checktypes(types) {
+    let event = "";
+    switch (types) {
+      case "marriage":
+        event = marriage;
+        break;
+      case "soirée":
+        event = soiree;
+        break;
+
+      case "seminaire":
+        event = seminaire;
+        break;
+      case "autre":
+        event = autre;
+        break;
+      default:
+        break;
+    }
+    return event;
+  }
+
   console.log(sliderRef);
   return (
     <div
@@ -183,19 +220,21 @@ const SliderCard = () => {
         }}
       >
         <Slider ref={sliderRef} {...settings}>
-          {cardsData.map((card, index) => (
+          {data.map((el, index) => (
             <div className="card" key={index}>
               <div
                 className={`card-body`}
                 style={{
-                  background: `url(${card.image})`,
+                  background: `url(${checktypes(el.types)})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
               >
                 <div className="contenaire-texte">
-                  <h3 className="card-slider-title">{card.title}</h3>
-                  <p className="card-slider-content">{card.content}</p>
+                  <h3 className="card-slider-title text-3xl">{el.types}</h3>
+                  <p className="card-slider-content text-2xl">
+                    {el.date_evenement}
+                  </p>
                 </div>
               </div>
             </div>

@@ -5,13 +5,19 @@ import { TextField } from "@mui/material";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import ButtonAnnimate from "../../../../components/ui/button/ButtonAnnimate";
-
 import { PayerOnline } from "../../../../services/clientService";
 let ValuePiece = Date | null;
-
+import moment from "moment";
+import "moment/locale/fr";
+moment.locale("fr");
 let Value = ValuePiece | [ValuePiece, ValuePiece];
 const Marriage = () => {
   const [value, onChange] = useState(new Date());
+
+  let user = JSON.parse(localStorage.getItem("user"));
+
+  const [numberDay, setnumberDay] = useState(1);
+
   return (
     <div className="w-full h-fit">
       <div
@@ -37,12 +43,14 @@ const Marriage = () => {
           <div className="flex gap-6 max-w-96 flex-wrap">
             <TextField
               placeholder="nom"
+              value={user.nom}
               required
               variant="outlined"
               fullWidth
             />
             <TextField
               placeholder="prenom"
+              value={user.prenom}
               required
               variant="outlined"
               fullWidth
@@ -52,6 +60,16 @@ const Marriage = () => {
               required
               variant="outlined"
               fullWidth
+              value={user.email}
+            />
+            <TextField
+              placeholder="Nombre de Jour"
+              required
+              variant="outlined"
+              fullWidth
+              onChange={(e) => setnumberDay(e.target.value)}
+              value={numberDay}
+              type="number"
             />
             <TextField
               placeholder="prix"
@@ -64,12 +82,12 @@ const Marriage = () => {
               onClick={() =>
                 PayerOnline({
                   id: "price_1PC6gOJEf8eLUxMoFsjKAIlT",
-                  days: 4,
+                  days: numberDay,
                   typesEvenement: "marriage",
-                  dateEvenement: "10-12-2020",
+                  dateEvenement: moment.utc(value).format("lll"),
                   prix: 1000000,
-                  user_id: 1,
-                  mail: "maheryrak1234@gmail.com",
+                  user_id: user.id,
+                  mail: user.email,
                 })
               }
               title={"Faire une Reservation"}
