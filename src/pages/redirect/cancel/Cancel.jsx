@@ -10,12 +10,7 @@ const Cancel = () => {
             Votre Payement a n'est pas Effectuer
           </h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatibus accusamus dicta eaque, non numquam temporibus fuga
-            minus beatae? Similique, beatae. Quae ratione sequi, quod temporibus
-            ad accusamus! Quibusdam cumque facere expedita minus illo, beatae
-            quam quis quaerat vitae iusto tenetur a harum officiis similique
-            maxime. Ab repellat praesentium sequi. Nesciunt.
+           oups 😥 vous avez annuler votre payement 
           </p>
 
           <NavLink to={"/"}>

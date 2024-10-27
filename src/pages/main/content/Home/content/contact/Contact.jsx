@@ -19,12 +19,12 @@ const Contact = () => {
     {
       icons: <img src={PhoneIcons} className="icons" />,
       title: "Telephone",
-      content: "+261 34 85 009 92 ",
+      content: "+261 01 537 37 ",
     },
     {
       icons: <img src={EmailIcons} className="icons" />,
       title: "Mail",
-      content: "siriuseducation@gmail.com ",
+      content: "royalespacefianar@gmail.com ",
     },
   ];
   const [visible, setVisible] = useState(false);

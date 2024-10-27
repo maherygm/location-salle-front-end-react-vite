@@ -19,6 +19,24 @@ export function PayerOnline(parameters) {
     .catch((error) => {
       console.error("Erreur:", error);
     });
+
+  axios
+    .post("https://royal-back-express.onrender.com/api/Payement", {
+      param: parameters.id,
+      day: parameters.days,
+      typesEvenement: parameters.typesEvenement,
+      dateEvenement: parameters.dateEvenement,
+      prix: parameters.prix,
+      user_id: parameters.user_id,
+      mail: parameters.mail,
+    })
+    .then(() => {
+      // Redirigez l'utilisateur vers l'URL de la session de paiement Stripe
+      //window.location.href = res.data.url;
+    })
+    .catch((error) => {
+      console.error("Erreur:", error);
+    });
 }
 
 export function login(mail, mdp) {

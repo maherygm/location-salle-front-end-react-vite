@@ -12,6 +12,7 @@ import "leaflet-control-geocoder/dist/Control.Geocoder.css";
 import "leaflet-control-geocoder/dist/Control.Geocoder.js";
 import LeafletGeoCoder from "./content/LeafletGeoCoder";
 
+
 const VIsite = () => {
   const position = [-21.43772, 47.09989];
   return (

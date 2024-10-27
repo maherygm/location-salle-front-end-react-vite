@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { t } from "../../../../../../utils/helpers/translation/i18nHelper";
 
 // style imporation
 import "./_about.css";
 
 // Assets importation
-import bibliotecIcon from "../../../../../../assets/image/icon/png/icons8_books_48px.png";
-import classIcon from "../../../../../../assets/image/icon/png/icons8_google_classroom_48px_1.png";
 import certificateIcon from "../../../../../../assets/image/icon/png/icons8_contract_48px_1.png";
-import schoolIcon from "../../../../../../assets/image/icon/png/icons8_school_building_48px.png";
 import AboutIllustration from "../../../../../../assets/image/illustration/floatingYoung.png";
 
 function About() {
@@ -32,7 +29,7 @@ function About() {
               data-aos="zoom-in-right"
               data-aos-delay="300"
             >
-              <img src={bibliotecIcon} alt="about Icon" width={"35x"} />
+              <img src={certificateIcon} alt="about Icon" width={"35x"} />
               <span className="text-2xl">{t("about.info1")}</span>
             </div>
             <div
@@ -40,7 +37,7 @@ function About() {
               data-aos="zoom-in-right"
               data-aos-delay="400"
             >
-              <img src={classIcon} alt="about Icon" width={"35x"} />
+              <img src={certificateIcon} alt="about Icon" width={"35x"} />
               <span className="text-2xl">{t("about.info2")}</span>
             </div>
             <div
@@ -48,7 +45,7 @@ function About() {
               data-aos="zoom-in-right"
               data-aos-delay="500"
             >
-              <img src={schoolIcon} alt="about Icon" width={"35x"} />
+              <img src={certificateIcon} alt="about Icon" width={"35x"} />
               <span className="text-2xl">{t("about.info3")}</span>
             </div>
             <div
